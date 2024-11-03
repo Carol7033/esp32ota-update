@@ -8,7 +8,7 @@ def led_blink():
     while True:
         # Enciende el LED
         led.on()
-        print("OTA FUNCIONA EQUIPO DE CARO")  # Mensaje en consola
+        print("OTA FUNCIONA EQUIPO DE CAR,Luis y Fany")  # Mensaje en consola
         time.sleep(8)  # Mantiene el LED encendido durante 5 segundos
 
         # Apaga el LED
