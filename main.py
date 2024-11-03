@@ -1,13 +1,21 @@
 import machine
 import time
 
-led = machine.Pin(2, machine.Pin.OUT)  # Ajusta el número de pin según tu conexión
+# Configura el LED incorporado (normalmente el GPIO 2 en muchos ESP32)
+led = machine.Pin(2, machine.Pin.OUT)
 
-while True:
-    led.on()
-    print("Caro, funciona OTA")  # Mensaje personalizado
-    time.sleep(1)
-    led.off()
-    time.sleep(1)
+def led_blink():
+    while True:
+        # Enciende el LED
+        led.on()
+        print("OTA FUNCIONA EQUIPO DE CARO")  # Mensaje en consola
+        time.sleep(5)  # Mantiene el LED encendido durante 5 segundos
+
+        # Apaga el LED
+        led.off()
+        time.sleep(3)  # Mantiene el LED apagado durante 3 segundos
+
+# Llama a la función para comenzar el parpadeo del LED
+led_blink()
 
 
