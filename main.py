@@ -1,12 +1,12 @@
-from machine import Pin
+import machine
 import time
 
-# Definimos el LED integrado (en el pin 2 en la mayoría de los ESP32)
-led = Pin(2, Pin.OUT)
+led = machine.Pin(2, machine.Pin.OUT)  # Ajusta el número de pin según tu conexión
 
-# Encendemos y apagamos el LED con una pausa de 1 segundo
 while True:
     led.on()
-    time.sleep(2)
+    print("¡Actualización recibida!")  # Mensaje que indica que se ha actualizado
+    time.sleep(1)
     led.off()
-    time.sleep(2)
+    time.sleep(1)
+
