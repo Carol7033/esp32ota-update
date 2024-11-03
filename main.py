@@ -5,7 +5,7 @@ led = machine.Pin(2, machine.Pin.OUT)  # Ajusta el número de pin según tu cone
 
 while True:
     led.on()
-    print("¡Actualización recibida Caro puedes editarme desde Github!")  # Mensaje que indica que se ha actualizado
+    print("¡Caro puedes editarme desde Github!")  # Mensaje que indica que se ha actualizado
     time.sleep(1)
     led.off()
     time.sleep(1)
