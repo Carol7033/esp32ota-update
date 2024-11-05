@@ -5,17 +5,15 @@ import time
 led = machine.Pin(2, machine.Pin.OUT)
 
 def led_blink():
-    while True:
-        # Enciende el LED
+    for i in range(5):  # Parpadeo del LED 5 veces
         led.on()
-        print("Funciona OTA vers 80 EQUIPO DE Caro,Luis y Fany")  # Mensaje en consola
-        time.sleep(5)  # Mantiene el LED encendido durante 
-
-        # Apaga el LED
+        print("Funciona OTA vers 80 EQUIPO DE Caro, Luis y Fany")
+        time.sleep(1)
         led.off()
-        time.sleep(2)  # Mantiene el LED apagado durante
+        time.sleep(1)
 
 # Llama a la función para comenzar el parpadeo del LED
 led_blink()
+
 
 
