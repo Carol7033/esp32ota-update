@@ -8,12 +8,12 @@ def led_blink():
     while True:
         # Enciende el LED
         led.on()
-        print("OTA equipo Caro, Luis y Fany vers 10.1.5")  # Mensaje en consola
-        time.sleep(4)  # Mantiene el LED encendido durante 5 segundos
+        print("OTA equipo Caro, Luis y Fany vers 10.1.6")  # Mensaje en consola
+        time.sleep(3)  # Mantiene el LED encendido durante 5 segundos
 
         # Apaga el LED
         led.off()
-        time.sleep(1)  # Mantiene el LED apagado durante 2 segundos
+        time.sleep(6)  # Mantiene el LED apagado durante 2 segundos
 
 # Llama a la función para comenzar el parpadeo del LED
 led_blink()
